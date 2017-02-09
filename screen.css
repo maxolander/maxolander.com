@@ -1,19 +1,86 @@
-HTML, BODY, HEADER, SECTION, H1, H2, DIV, UL, LI, A {margin:0; padding:0; border:0; line-height:1;}
-HTML {-webkit-text-size-adjust:none;}
-BODY {background:#fff; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; padding:15% 20px 50px 20px; text-align:center;}
-A {text-decoration:none; font-size:14px; font-weight:500; color:#2a87bd;}
-A:HOVER {color:#58b9f2;}
-LI {list-style:none;}
-H1 {font-size:22px; font-weight:400; border-bottom:1px solid #ccc; display:inline-block; margin:0 0 14px 0; padding:0 0 6px 0; color:#444;}
-H2 {font-size:16px; font-weight:400; border-bottom:1px solid #ccc; display:inline-block; margin:0 0 14px 0; padding:0 0 6px 0; color:#444;}
-#hd IMG {display:block; margin:0 auto 25px auto;}
-#contact {margin:0 0 60px 0;}
-#contact UL {margin:0 auto; overflow:hidden; display:inline-block;}
-#contact LI {float:left; margin:0 10px;}
-#contact LI A {display:block;}
-#projects LI {font-size:14px; margin:0 0 12px 0;}
+html, body, h1, p, table, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	line-height:1;
+}
 
-HTML.ie7 H1, HTML.ie7 H2 {border-bottom:0;}
-HTML.ie7 #contact UL {text-align:center;}
-HTML.ie7 #contact LI {float:none; display:inline;}
-HTML.ie7 #contact LI A {display:inline;}
+html,body {
+	height:100%;
+}
+
+body {
+	background:#fff;
+	color:#999;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight:300;
+	font-size:16px;
+}
+
+a {
+	color:#222;
+	text-decoration:none;
+	font-weight:400;
+	border-bottom:1px solid #ccc;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color:#2a87bd;
+	border-color:#888;
+}
+
+h1 {
+	font-weight:400;
+	position:absolute;
+	top:100px;
+	left:100px;
+	font-size:22px;
+	color:#222;
+}
+
+table {
+	position:absolute;
+	bottom:100px;
+	left:100px;
+}
+
+th {
+	font-weight:300;
+	text-align:left;
+	padding:9px 0;
+	width:auto;
+	min-width:75px;
+}
+
+img {
+	position:absolute;
+	width:100%;
+	width:300px;
+	height:300px;
+	top:100px;
+	right:100px;
+	display:block;
+}
+
+
+@media all and (max-width: 800px), (max-height: 600px) {
+	
+	h1 {
+		top:40px;
+		left:40px;
+	}
+	
+	table {
+		bottom:40px;
+		left:40px;
+	}
+	
+	img {
+		width:100px;
+		height:100px;
+		top:40px;
+		right:40px;
+	}
+	
+}
