@@ -22,12 +22,14 @@ a {
 	text-decoration:none;
 	font-weight:400;
 	border-bottom:1px solid #ccc;
+  border-bottom:1px solid rgba(86,86,86,0.55);
 	transition: all 0.3s ease;
 }
 
 a:hover {
 	color:#2a87bd;
 	border-color:#888;
+  border-color:rgba(56,56,56,0.68);
 }
 
 h1 {
@@ -53,14 +55,46 @@ th {
 	min-width:75px;
 }
 
+
 img {
-	position:absolute;
-	width:100%;
-	width:300px;
-	height:300px;
-	top:100px;
-	right:100px;
-	display:block;
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin-top:-300px;
+  margin-left:-300px;
+  position: absolute;
+  top:400px;
+  right:100px;
+  -webkit-animation: moveX 6.1s linear 0s infinite alternate, moveY 6.6s linear 0s infinite alternate;
+  -moz-animation: moveX 6.1s linear 0s infinite alternate, moveY 6.6s linear 0s infinite alternate;
+  -o-animation: moveX 6.1s linear 0s infinite alternate, moveY 6.6s linear 0s infinite alternate;
+  animation: moveX 6.1s linear 0s infinite alternate, moveY 6.6s linear 0s infinite alternate;
+}
+
+
+@-webkit-keyframes moveX {
+  from { left: 300px; } to { left: 100%; }
+}
+@-moz-keyframes moveX {
+  from { left: 300px; } to { left: 100%; }
+}
+@-o-keyframes moveX {
+  from { left: 300px; } to { left: 100%; }
+}
+@keyframes moveX {
+  from { left: 300px; } to { left: 100%; }
+}
+@-webkit-keyframes moveY {
+  from { top: 300px; } to { top: 100%; }
+}
+@-moz-keyframes moveY {
+  from { top: 300px; } to { top: 100%; }
+}
+@-o-keyframes moveY {
+  from { top: 300px; } to { top: 100%; }
+}
+@keyframes moveY {
+  from { top: 300px; } to { top: 100%; }
 }
 
 
@@ -79,8 +113,40 @@ img {
 	img {
 		width:100px;
 		height:100px;
-		top:40px;
+		top:140px;
 		right:40px;
+    margin-left:-100px;
+    margin-top:-100px;
+    -webkit-animation: moveX 4.1s linear 0s infinite alternate, moveY 4.6s linear 0s infinite alternate;
+    -moz-animation: moveX 4.1s linear 0s infinite alternate, moveY 4.6s linear 0s infinite alternate;
+    -o-animation: moveX 4.1s linear 0s infinite alternate, moveY 4.6s linear 0s infinite alternate;
+    animation: moveX 4.1s linear 0s infinite alternate, moveY 4.6s linear 0s infinite alternate;
 	}
+  
+  @-webkit-keyframes moveX {
+    from { left: 100px; } to { left: 100%; }
+  }
+  @-moz-keyframes moveX {
+    from { left: 100px; } to { left: 100%; }
+  }
+  @-o-keyframes moveX {
+    from { left: 100px; } to { left: 100%; }
+  }
+  @keyframes moveX {
+    from { left: 100px; } to { left: 100%; }
+  }
+  @-webkit-keyframes moveY {
+    from { top: 100px; } to { top: 100%; }
+  }
+  @-moz-keyframes moveY {
+    from { top: 100px; } to { top: 100%; }
+  }
+  @-o-keyframes moveY {
+    from { top: 100px; } to { top: 100%; }
+  }
+  @keyframes moveY {
+    from { top: 100px; } to { top: 100%; }
+  }
+  
 	
 }
